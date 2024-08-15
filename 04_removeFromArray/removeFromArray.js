@@ -9,7 +9,14 @@ const removeFromArray = function(processedArray, ...argsToRemove) {
         
     });
 
+/* you could also use array.from    
+which means, create an array from values i give you
+eg Array.from('foo')
+gives an array of three characters, 'f', 'o'.. etc
+you could filter the initial array to ensure not equaling the argument
+then return array.from that
 
+*/
 
 return newArray;
 
