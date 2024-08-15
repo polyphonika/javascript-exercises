@@ -19,6 +19,9 @@ toFixed(x) where x is number of dp
 but this outputs a string
 use parseFloat to convert back to float
 
+can also use Math.round then div by 10 at the end for 1 dp 
+(or 100 for three dp.. etc)
+
 */
 
 // Do not edit below this line
