@@ -13,6 +13,10 @@ const sum = function(numbers) {
       sum += number;
     });
   }
+
+  //can also use array.reduce instead
+  //it is far more efficient to do so
+
   return sum;
 };
 
@@ -23,6 +27,8 @@ let multiple = numbers[0];
 for (let i = 1; i <= arrayLength-1; i++ ) {
   multiple *= numbers[i];
 }
+
+//again, array.reduce would work well
 
 return multiple;
 };
