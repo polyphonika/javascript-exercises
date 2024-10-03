@@ -1,60 +1,12 @@
-const add = function(a,b) {
-	return a + b;  
-};
+const add = (a,b) => a+b;
+const subtract = (a,b) => a-b;
+const sum = arr => arr.reduce((acc,num) => acc + num, 0);
+const multiply = arr => arr.reduce((acc, num) => acc*num, 1);
+const power = (a,b) => a**b;
+const factorial = a => a === 0 ? 1 : 
+  Array.from({ length: a }, (_, i) => i + 1)
+  .reduce((acc, num) => acc*num, 1);
 
-const subtract = function(a,b) {
-	return a-b;
-};
-
-const sum = function(numbers) {
-	let sum = 0;
-  if (numbers) {
-    numbers.forEach(number => {
-      sum += number;
-    });
-  }
-
-  //can also use array.reduce instead
-  //it is far more efficient to do so
-
-  return sum;
-};
-
-const multiply = function(numbers) {
-
-let arrayLength = numbers.length;
-let multiple = numbers[0];
-for (let i = 1; i <= arrayLength-1; i++ ) {
-  multiple *= numbers[i];
-}
-
-//again, array.reduce would work well
-
-return multiple;
-};
-
-const power = function(a,b) {
-	return a**b;
-};
-
-const factorial = function(a) {
-	/*
-  what is a factorial?
-  eg factorial of 5 = 5 x 4 x 3 x 2 x 1
-  nb: factorial of 0 is 1
-  */
-
-  if (a==0 || a==1) {
-    return 1;
-  } else {
-    let result = a;
-    for (let i = a-1; i>=1; i--) {
-      result *= i;
-    }
-    return result;
-  } 
-
-};
 
 // Do not edit below this line
 module.exports = {
